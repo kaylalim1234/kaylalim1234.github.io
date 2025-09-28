@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> More Photos </title>
+  <style>
+    body {
+      background-color: #fff1f3;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #ffa5b1;
+      margin-bottom: 10px;
+    }
+
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 30px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+    }
+
+    .back-link {
+      margin-top: 30px;
+      display: inline-block;
+      color: #d65a9f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+
+</head>
+<body>
+  <h1>Macaron Photo Gallery</h1>
+  <p> documenting my baking journey</p>
+
+  <div class="gallery">
+    <img src="" alt="Macaron 1">
+    <img src="" alt="Macaron 2">
+    <img src="" alt="Macaron 3">
+    <img src="" alt="Macaron 4">
+    <img src="" alt="Macaron 5">
+    <img src="" alt="Macaron 6">
+  </div>
+
+  <a class="back-link" href="index.html">← Back to Home</a>
+</body>
+</html>
+
